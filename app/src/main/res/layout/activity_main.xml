@@ -75,7 +75,7 @@
         android:id="@+id/editTextTextPassword"
         android:layout_width="354dp"
         android:layout_height="47dp"
-        android:drawableStart="@drawable/person"
+        android:drawableStart="@drawable/lockk"
         android:ems="10"
         android:gravity="center"
         android:hint="Password"
