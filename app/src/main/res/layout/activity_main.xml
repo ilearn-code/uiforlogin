@@ -94,10 +94,11 @@
         android:id="@+id/button"
         android:layout_width="151dp"
         android:layout_height="30dp"
-        android:background="@drawable/roundbuttonallradius"
+        android:background="@drawable/borderbutton"
         android:text="Login"
         android:textSize="9sp"
-        app:backgroundTint="#2073C6"
+
+        app:backgroundTint="#FBFAFA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
