@@ -4,7 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/cardview_dark_background">
 
+
+    <TextView
+        android:id="@+id/ZCOSMIC"
+        android:layout_width="107dp"
+        android:layout_height="26dp"
+        android:text="ZCOSMIC"
+        android:textColor="#EDE5E5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/sis"
+        android:layout_width="136dp"
+        android:layout_height="81dp"
+        android:text="S.I.S"
+        android:textColor="#EDE5E5"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:text="APP"
+        android:textColor="#EDE5E5"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/person"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+
+        android:text="Username/unique ID"
+        android:textColor="#F1EDED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/person"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:textColor="#F1EDED"
+        android:textColorHint="#E3D5D5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="151dp"
+        android:layout_height="30dp"
+        android:background="@drawable/roundbuttonallradius"
+        android:text="Login"
+        android:textSize="9sp"
+        app:backgroundTint="#2073C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.747" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forgot or reset your password"
+        android:textColor="#EDE5E5"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="682dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
