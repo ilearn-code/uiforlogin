@@ -55,7 +55,7 @@
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="357dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
 
         android:backgroundTint="@android:color/white"
         android:drawableLeft="@drawable/person"
@@ -75,7 +75,7 @@
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="354dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="260dp"
         android:backgroundTint="@android:color/white"
         android:drawableStart="@drawable/lockk"
@@ -96,7 +96,7 @@
     <Button
         android:id="@+id/button"
         android:layout_width="151dp"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:background="@drawable/borderbutton"
         android:text="Login"
         android:textColor="#FBF9F9"
