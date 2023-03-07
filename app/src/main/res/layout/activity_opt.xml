@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".opt"
     android:background="@color/sky">
 
 
@@ -15,10 +15,10 @@
         android:layout_height="50dp"
 
         android:backgroundTint="@android:color/white"
-        android:drawableLeft="@drawable/person"
+
         android:ems="10"
         android:gravity="center"
-        android:hint="Username/unique ID"
+        android:hint="New Password"
         android:inputType="textPersonName"
         android:textColor="#F6F5F5"
         android:textColorHint="#F3ECEC"
@@ -34,11 +34,9 @@
         android:layout_width="354dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/white"
-        android:drawableStart="@drawable/lockk"
-        android:drawableLeft="@drawable/lockk"
         android:ems="10"
         android:gravity="center"
-        android:hint="Password"
+        android:hint="Confirm Password"
         android:inputType="textPassword"
         android:textColor="#F6F5F5"
         android:textColorHint="#F3ECEC"
@@ -55,7 +53,7 @@
         android:layout_width="151dp"
         android:layout_height="50dp"
         android:background="@drawable/borderbutton"
-        android:text="Login"
+        android:text="Save"
         android:textColor="#FBF9F9"
         app:layout_constraintHorizontal_bias="0.5"
         android:textSize="20sp"
@@ -66,18 +64,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.768" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot or Reset your Password?"
-        android:textColor="#EDE5E5"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+
 
     <ImageView
         android:id="@+id/imageView"
@@ -90,5 +77,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.188"
         app:srcCompat="@drawable/ic_insta_tf_logo" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
