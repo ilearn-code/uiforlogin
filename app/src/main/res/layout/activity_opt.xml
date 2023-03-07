@@ -5,17 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".opt"
-    android:background="@color/sky">
+    android:background="@drawable/pexels_arthouse_studio_4534200_gif">
 
-
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/child_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/skytransparent" />
 
     <EditText
         android:id="@+id/loginusername"
         android:layout_width="357dp"
         android:layout_height="50dp"
-
         android:backgroundTint="@android:color/white"
-
         android:ems="10"
         android:gravity="center"
         android:hint="New Password"
@@ -46,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.612"
-        tools:ignore="UnknownId" />
+        />
 
     <Button
         android:id="@+id/button"
