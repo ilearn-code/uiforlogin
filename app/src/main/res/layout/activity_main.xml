@@ -11,7 +11,7 @@
 
     <EditText
         android:id="@+id/loginusername"
-        android:layout_width="357dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
 
         android:backgroundTint="@android:color/white"
@@ -31,7 +31,7 @@
 
     <EditText
         android:id="@+id/loginPassword"
-        android:layout_width="354dp"
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:backgroundTint="@android:color/white"
         android:drawableStart="@drawable/lockk"
@@ -81,8 +81,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="156dp"
-        android:layout_height="148dp"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
