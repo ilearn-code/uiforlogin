@@ -28,6 +28,7 @@
             android:inputType="textPersonName"
             android:textColor="#F6F5F5"
             android:textColorHint="#F3ECEC"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -63,7 +64,7 @@
         android:text="Save"
         android:textColor="#FBF9F9"
         android:textSize="20sp"
-        app:backgroundTint="#FBFAFA"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.594"

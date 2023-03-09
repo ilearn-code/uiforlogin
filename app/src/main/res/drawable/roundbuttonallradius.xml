@@ -3,7 +3,9 @@
         
     <item>
         <shape android:shape="rectangle"
+
             >
+            X
             <corners
                 android:bottomLeftRadius="5dp"
                 android:bottomRightRadius="30dp"
