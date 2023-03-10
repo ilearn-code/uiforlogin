@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,6 +64,9 @@ dispay=(TextView)findViewById(R.id.textView4) ;
                     @Override
                     public void onResponse(JSONObject response) {
                         // handle the response JSON object here
+//                        Log.d("API Response", response);
+                        Intent intent=new Intent(MainActivity.this,opt.class);
+                        startActivity(intent);
                         Toast.makeText(MainActivity.this, "Please fill all form fields.", Toast.LENGTH_LONG).show();
                     }
                 },
@@ -71,8 +75,7 @@ dispay=(TextView)findViewById(R.id.textView4) ;
                     public void onErrorResponse(VolleyError error) {
                         // handle the error here
 //                        Toast.makeText(MainActivity.this, "heyy", Toast.LENGTH_LONG).show();
-                        Intent intent=new Intent(MainActivity.this,opt.class);
-                        startActivity(intent);
+
                     }
                 });
 
