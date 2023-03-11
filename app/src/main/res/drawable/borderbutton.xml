@@ -4,9 +4,9 @@
     <shape android:shape="rectangle">
       <corners
           android:bottomLeftRadius="5dp"
-          android:bottomRightRadius="30dp"
-          android:topLeftRadius="30dp"
-          android:topRightRadius="5dp" />
+          android:bottomRightRadius="120dp"
+          android:topLeftRadius="120dp"
+          android:topRightRadius="15dp" />
       <solid android:angle="270"
           android:color="#80000000"/>
       <stroke

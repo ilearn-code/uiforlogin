@@ -23,6 +23,8 @@
             android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
             android:ems="10"
+            android:drawableStart="@drawable/lockk"
+            android:drawableLeft="@drawable/lockk"
             android:gravity="center"
             android:hint="New Password"
             android:inputType="textPersonName"
@@ -43,6 +45,8 @@
             android:backgroundTint="@android:color/white"
             android:ems="10"
             android:gravity="center"
+            android:drawableLeft="@drawable/lockk"
+            android:drawableStart="@drawable/lockk"
             android:hint="Confirm Password"
             android:inputType="textPassword"
             android:textColor="#F6F5F5"
@@ -67,7 +71,7 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.81" />
