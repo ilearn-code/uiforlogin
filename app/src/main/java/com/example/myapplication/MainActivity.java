@@ -29,19 +29,29 @@ public class MainActivity extends AppCompatActivity {
 
     Button LoginButton;
 TextView dispay;
+EditText emailed,passworded ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-LoginButton=(Button)findViewById(R.id.button);
-dispay=(TextView)findViewById(R.id.textView4) ;
-     LoginButton.setOnClickListener(new View.OnClickListener() {
+       LoginButton=(Button)findViewById(R.id.button);
+       dispay=(TextView)findViewById(R.id.textView4) ;
+       emailed=(EditText)findViewById(R.id.loginusername);
+
+        passworded=(EditText)findViewById(R.id.loginPassword);
+
+        LoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                makeVolleyRequest("admin@gmail.com", "123456");
+                dispay=(TextView)findViewById(R.id.textView4) ;
+
+                String email = emailed.getText().toString(); // read the value of email from the EditText view
+                String password = passworded.getText().toString().trim();
+//                dispay.setText(password);
+                makeVolleyRequest(email, password);
 
 
             }
