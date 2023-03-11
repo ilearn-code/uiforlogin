@@ -64,10 +64,11 @@ dispay=(TextView)findViewById(R.id.textView4) ;
                     @Override
                     public void onResponse(JSONObject response) {
                         // handle the response JSON object here
-//                        Log.d("API Response", response);
-                        Intent intent=new Intent(MainActivity.this,opt.class);
-                        startActivity(intent);
-                        Toast.makeText(MainActivity.this, "Please fill all form fields.", Toast.LENGTH_LONG).show();
+
+                     Log.d("API Response", response.toString());
+//                        Intent intent=new Intent(MainActivity.this,opt.class);
+//                        startActivity(intent);
+                        Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_LONG).show();
                     }
                 },
                 new Response.ErrorListener() {
