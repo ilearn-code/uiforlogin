@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".resetpassword"
+    tools:context=".registered_email"
     android:background="@drawable/untitled_1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -25,8 +25,9 @@
             android:layout_height="50dp"
             android:backgroundTint="@color/white"
             android:gravity="center"
-            android:hint="Enter OTP here"
-            android:inputType="number"
+            android:drawableLeft="@drawable/person"
+            android:hint="Enter(Unique id/ Email id)"
+
             android:textColor="#FFFFFF"
             android:textColorHint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,33 +41,17 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="105dp"
-            android:layout_marginRight="105dp"
-            android:layout_marginBottom="169dp"
-            android:text="Enter OTP"
+
+            android:layout_marginEnd="64dp"
+            android:layout_marginRight="64dp"
+            android:text="Registered Email"
             android:textColor="@color/white"
             android:textSize="25sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="148dp"
-            android:text="(Send on registered mail)"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
@@ -74,7 +59,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:background="@drawable/borderbutton"
-        android:text="check"
+        android:text="send otp"
         android:textColor="#FBF9F9"
         android:textSize="20sp"
 
@@ -85,6 +70,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.81" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
