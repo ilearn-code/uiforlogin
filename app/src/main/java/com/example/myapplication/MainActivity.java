@@ -76,8 +76,8 @@ EditText emailed,passworded ;
                         // handle the response JSON object here
 
                      Log.d("API Response", response.toString());
-//                        Intent intent=new Intent(MainActivity.this,opt.class);
-//                        startActivity(intent);
+                      Intent intent=new Intent(MainActivity.this,opt.class);
+                       startActivity(intent);
                         Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_LONG).show();
                     }
                 },
