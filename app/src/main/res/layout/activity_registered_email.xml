@@ -7,6 +7,19 @@
     tools:context=".registered_email"
     android:background="@drawable/untitled_1">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="108dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/ic_insta_tf_logo"
+        android:contentDescription="icon" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="320dp"
         android:layout_height="208dp"
@@ -20,13 +33,13 @@
         app:layout_constraintVertical_bias="0.5">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/uniqueid"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/white"
             android:gravity="center"
             android:drawableLeft="@drawable/person"
-            android:hint="Enter(Unique id/ Email id)"
+            android:hint="@string/enter_unique_id_email_id"
 
             android:textColor="#FFFFFF"
             android:textColorHint="@color/white"
@@ -41,7 +54,6 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginEnd="64dp"
             android:layout_marginRight="64dp"
             android:text="Registered Email"
@@ -50,13 +62,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintVertical_bias="0.1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="300dp"
+        android:layout_width="320dp"
         android:layout_height="50dp"
         android:background="@drawable/borderbutton"
         android:text="send otp"
@@ -68,6 +81,21 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
+        app:layout_constraintVertical_bias="0.8" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot or Reset your Password?"
+        android:textColor="#EDE5E5"
+        android:onClick="tv_reset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

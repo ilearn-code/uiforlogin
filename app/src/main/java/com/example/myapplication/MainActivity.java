@@ -58,7 +58,7 @@ EditText emailed,passworded ;
     }
     public void tv_reset(View view) {
 
-        Intent intent=new Intent(MainActivity.this,registered_email.class);
+        Intent intent=new Intent(MainActivity.this,register_user.class);
         startActivity(intent);
 
     }
