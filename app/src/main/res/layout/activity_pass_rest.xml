@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".opt"
+    tools:context=".resetpassword"
     android:background="@drawable/untitled_1">
 
 
@@ -70,7 +70,7 @@
         android:text="Save"
         android:textColor="#FBF9F9"
         android:textSize="20sp"
-
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

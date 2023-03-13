@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,7 +12,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
@@ -58,7 +56,12 @@ EditText emailed,passworded ;
         });
 
     }
+    public void tv_reset(View view) {
 
+        Intent intent=new Intent(MainActivity.this,registered_email.class);
+        startActivity(intent);
+
+    }
     private void makeVolleyRequest(String username, String password) {
 
         String url = "https://pg.imbuetech.in/api/login"; // replace with your actual API endpoint
@@ -76,7 +79,7 @@ EditText emailed,passworded ;
                         // handle the response JSON object here
 
                      Log.d("API Response", response.toString());
-                      Intent intent=new Intent(MainActivity.this,opt.class);
+                      Intent intent=new Intent(MainActivity.this, otp.class);
                        startActivity(intent);
                         Toast.makeText(MainActivity.this, response.toString(), Toast.LENGTH_LONG).show();
                     }
@@ -85,7 +88,7 @@ EditText emailed,passworded ;
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         // handle the error here
-//                        Toast.makeText(MainActivity.this, "heyy", Toast.LENGTH_LONG).show();
+                      Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
 
                     }
                 });

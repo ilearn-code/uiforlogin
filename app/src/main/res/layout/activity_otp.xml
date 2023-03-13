@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".resetpassword"
+    tools:context=".otp"
     android:background="@drawable/untitled_1">
 
     <androidx.constraintlayout.widget.ConstraintLayout

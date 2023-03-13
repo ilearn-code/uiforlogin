@@ -20,7 +20,7 @@
             android:name=".resetpassword"
             android:exported="false" />
         <activity
-            android:name=".opt"
+            android:name=".otp"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
