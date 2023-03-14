@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.525">
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/rg_password"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
@@ -39,7 +39,7 @@
             app:layout_constraintVertical_bias="0.62" />
 
         <EditText
-            android:id="@+id/cp"
+            android:id="@+id/rg_confirm_password"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
@@ -59,7 +59,7 @@
             app:layout_constraintVertical_bias="0.83" />
 
         <EditText
-            android:id="@+id/loginusername"
+            android:id="@+id/rg_email"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
@@ -79,7 +79,7 @@
             app:layout_constraintVertical_bias="0.22" />
 
         <EditText
-            android:id="@+id/mobno"
+            android:id="@+id/rg_mobno"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
@@ -99,7 +99,7 @@
             app:layout_constraintVertical_bias="0.42" />
 
         <EditText
-            android:id="@+id/usrnn"
+            android:id="@+id/rg_username"
             android:layout_width="280dp"
             android:layout_height="50dp"
             android:backgroundTint="@android:color/white"
@@ -119,6 +119,7 @@
             app:layout_constraintVertical_bias="0.04" />
 
         <RadioGroup
+            android:id="@+id/rg_rg"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -127,11 +128,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/usrnn"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.98">
 
             <RadioButton
-                android:id="@+id/r2"
+                android:id="@+id/rg_rd_br_2"
                 android:layout_width="93dp"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/white"
@@ -141,7 +142,7 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <RadioButton
-                android:id="@+id/r3"
+                android:id="@+id/rg_rd_ow_3"
                 android:layout_width="93dp"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/white"
@@ -151,7 +152,7 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
             <RadioButton
-                android:id="@+id/r4"
+                android:id="@+id/rg_rd_us_4"
                 android:layout_width="93dp"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/white"
@@ -165,7 +166,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/rg_btn"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:background="@drawable/borderbutton"
